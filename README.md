@@ -5,12 +5,15 @@
 `npm install -g pnpm`
 If you are using `nvm` the pnpm will be linked to the current `node` version that you are using.
 
-### Create a default pnpm `package.json` at the root level
+### Create a next.js app that uses typescript
 
-`pnpm init`
+`pnpm create next-app ts-next-app --template typescript`
 
-### Adjust the `package.json` and add `.gitignore`
+### My usual settings:
 
-We can delete the `"main": "index.js",` line because each app will live in its respective folder. Add the files you want to ignore to the `.gitignore`
-
-###
+Typescript: Yes
+ESLint: Yes
+Tailwind CSS: No
+`src/` directory: Yes
+Experimental `app/` directory: No
+Import alias: Just press enter (Default)
